@@ -4,7 +4,7 @@ Roullete is a popular casino game. In the game, a player may choose to place a b
 
 ## Screenshot
 
-![Screenshot of the Roullete Game](https://github.com/jameszhao1021/Roulette/blob/master/Screenshot/Demonstration.png?raw=true)
+![Screenshot of the Roullete Game](./Screenshot/Demonstration.png)
 
 
 ## Technologies Used
@@ -20,7 +20,8 @@ Pull the repo from https://github.com/jameszhao1021/Roulette.git to start the ga
 4. The result will be highlighted on the table, and the data about win or loss will be displayed in the top right corner.
 5. Place a chip on the table or click the 'Delete All' button to clear the previous chips, and then start the next spin.
 6. You are bankrupt When your balance becomes zero after a spin, you can click the 'Restart Game' button to restart the game. you can also click the 'Restart' button anytime if you want to reset your data.
+7. You can enable or disable the sound effect by clicking the checkbox.
   
 ## Next Steps
 
-I will add sound effects and create responsive designs. In addition, it is desirable to show the odd before placing a chip on the table and formulate an statistical form containing the historic results of previous spins.
+I will create responsive designs to make the game fit mobile devices. In addition, it is desirable to show the odd before placing a chip on the table and formulate an statistical form containing the historic results of previous spins.

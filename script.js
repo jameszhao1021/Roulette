@@ -467,6 +467,7 @@ let myChart = new Chart(wheel, {
 },
 )
 
+const roulleteSound = document.querySelector('.roulleteSound')
 //Start the spinning animation
 function startSpin() {
     if (selectedCombination.length === 0) return;
@@ -474,10 +475,13 @@ function startSpin() {
     let endAngle = parseFloat((Math.random() * (4000 - 3000) + 3000).toFixed(3));
     let resultAgnle = endAngle % 360;
     let startTime = performance.now();
-    let duration = 8000; // 
+    let duration = 10000; // 
     spinBtn.disabled = true;
     deleteAll.disabled = true;
     restartBtn.disabled = true;
+    if (soundCheckBox.checked) {
+        roulleteSound.play();
+    }
 
     function animate() {
         let elapsedTime = performance.now() - startTime;
@@ -502,7 +506,7 @@ function startSpin() {
         spinBtn.disabled = false;
         deleteAll.disabled = false;
         restartBtn.disabled = false;
-    }, 8200)
+    }, 10200)
     removeAllSelectedClasses();
 }
 
@@ -510,7 +514,6 @@ function startSpin() {
 function showResult(dataArray, resultAgnle) {
     dataArray.forEach(row => {
         if (resultAgnle > row.miniDegree && resultAgnle < row.maxDegree) {
-            console.log(row.value)
             calculateResult(row.value)
             renderBettingArea(row.value)
         }
@@ -592,6 +595,8 @@ chipforDemo.forEach(chip => chip.addEventListener('click', function() {
      chip.classList.toggle('selectedChip')
 
 }))
+
+const soundCheckBox = document.querySelector('#soundCheckbox');
 
 const restartBtn = document.querySelector('#restart');
 restartBtn.addEventListener('click', restart)
