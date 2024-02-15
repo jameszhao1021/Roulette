@@ -13,7 +13,7 @@ HTML, CSS and JavaScript were used in this game.
 
 ## Getting Started
 
-Pull the repo from https://github.com/jameszhao1021/Roulette.git to start the game.
+Click https://jameszhao1021.github.io/ to open the browser.
 1. Choose a chip, the default value is 100, you can also choose 50, 250, 500, and 1000.
 2. Place your chip on the table, you can place multiple chips at the same or different positions. The current betting value should not exceed the balance.
 3. Click the 'Spin' button to start the game.
