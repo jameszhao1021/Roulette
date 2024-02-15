@@ -484,7 +484,7 @@ function startSpin() {
         let progress = Math.min(elapsedTime / duration, 1);
         //Ease-out effect
         progress = 1 - Math.pow(1 - progress, 2); // Ease-out function: 1 - (1 - t)^2
-        let currentAngle = startAngle + (endAngle - startAngle) * progress;
+        const currentAngle = startAngle + (endAngle - startAngle) * progress;
 
         myChart.options.rotation = currentAngle;
         myChart.update();
