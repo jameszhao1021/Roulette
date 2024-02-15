@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bettinghArea.css">
+    <link rel="stylesheet" href="/popUp.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+    <script defer src="/script.js"></script>
+</head>
+<body>
+
+   <div class="container"> 
+      <div class="wheelAndTable">
+        <div class="wrapper">
+         <img src="./Images/arrow.png" alt="arrow" class="arrow">
+           <div class="containerWheel">
+              <canvas id="wheel"></canvas>
+                  <div class="middle">
+                  <div class="center"></div>
+              </div>
+         </div>
+       </div>
+       <div class="dataTable">
+         <h1>BALANCE: <span id="balance">10000</span></h1>
+         <h2>CURRENT BET: <span id="currentBet">0</span></h2>
+         <h2>WIN: <span id="winData">0</span></h2>
+         <h2>LOST: <span id="lostData">0</span></h2>
+         <h2>NET GAIN: <span id="netGain">0</span></h2>
+         <h2>TOTAL WIN: <span id="totalWinData">0</span></h2>
+         <h2>TOTAL LOST: <span id="totalLostData">0</span></h2>
+      </div>
+      </div>
+       <div class="buttonArea">
+          <div class="chipforDemo" data-value = 50>50</div>
+          <div class="chipforDemo selectedChip" data-value = 100>100</div>
+          <div class="chipforDemo" data-value = 250>250</div>
+          <div class="chipforDemo" data-value = 500>500</div>
+          <div class="chipforDemo" data-value = 1000>1000</div>
+          <button class="button" id="restart">Restart</button>
+          <button class="button" id="deleteAll">Delete All</button>
+          <button class="button" id="spin-btn">Spin</button>
+       </div> 
+   </div>
+   <div  id="overlay"></div>
+ 
+</body>
+</html>
